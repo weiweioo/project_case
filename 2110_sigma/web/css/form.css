@@ -1,0 +1,169 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+.input-style {
+    display: inline-block;
+    padding: 6px 10px;
+    font-size: 16px;
+    color: #333;
+    background: #fff;
+    border: 1px solid #B1B1B1;
+    border-radius: 3px;
+}
+
+
+/* -表單-------------------------------------------------------------------------------------------------------*/
+
+.styled-input {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0px 0px 0px 0px;
+    padding: 0;
+    list-style: none;
+}
+
+.styled-input span {
+    color: #da251d;
+    margin: 0 5px;
+}
+
+.styled-input li {
+    width: 100%;
+    margin: 0px 0px 15px 0px;
+    padding: 0;
+    list-style: none;
+    font-size: 16px;
+    color: #666;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.styled-input li.half {
+    width: calc(50% - 10px);
+}
+
+.styled-input .label {
+    width: 90px;
+}
+
+.styled-input label.active {
+    visibility: visible;
+    opacity: 1;
+    margin-top: 0px;
+}
+
+.styled-input label,
+.styled-input label.active {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    width: 90px;
+}
+
+.styled-input input[type="text"],
+.styled-input input[type="tel"],
+.styled-input input[type="email"],
+.styled-input input[type="password"] {
+    width: 100%;
+    height: 40px;
+    padding: 0 15px;
+    color: #666;
+    background-color: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    border: 1px solid #cacaca00;
+    border-radius: 3px;
+    -webkit-appearance: none;
+}
+
+.styled-input textarea {
+    width: 100%;
+    padding: 20px 15px;
+    color: #666;
+    background-color: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid #cacaca00;
+    border-radius: 3px;
+    -webkit-appearance: none;
+}
+
+.styled-input input[type="text"].active,
+.styled-input input[type="email"].active,
+.styled-input textarea.active {
+    padding: 0px;
+}
+
+.styled-input textarea {
+    resize: none;
+    height: 100px;
+    max-height: 100px;
+    display: block;
+}
+
+.styled-input input[type="text"]:focus,
+.styled-input input[type="email"]:focus {
+    border: 1px solid #da251d;
+    transition: 0.3s;
+}
+
+.styled-input textarea:focus {
+    border: 1px solid #da251d;
+    transition: 0.3s;
+}
+
+.styled-input ::-webkit-input-placeholder {
+    font-size: 16px;
+    color: #131313;
+}
+
+.styled-input ::-moz-placeholder {
+    color: #888;
+}
+
+.styled-input :-ms-input-placeholder {
+    color: #888;
+}
+
+.styled-input :-moz-placeholder {
+    color: #888;
+}
+
+.styled-input .code {
+    padding: 0 0 0 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.styled-input .code .refresh img {
+    width: 25px;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+    .styled-input li.half {
+        width: 100%;
+    }
+    .styled-input label {
+        top: -20px;
+        left: 0px;
+    }
+    .styled-input .label {
+        padding: 0px 0px 10px 0px;
+    }
+    .styled-input input[type="text"],
+    .styled-input input[type="tel"],
+    .styled-input input[type="email"],
+    .styled-input input[type="password"] {
+        padding: 20px 10px 20px 15px;
+    }
+}

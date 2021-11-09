@@ -1,0 +1,50 @@
+@charset "utf-8";
+/* CSS Document */
+/* ================================================================ 
+This copyright notice must be kept untouched in the stylesheet at 
+all times.
+
+The original version of this stylesheet and the associated (x)html
+is available at http://www.stunicholls.com/menu/pro_drop_1.html
+Copyright (c) 2005-2007 Stu Nicholls. All rights reserved.
+This stylesheet and the associated (x)html may be modified in any 
+way to fit your requirements.
+=================================================================== */
+img { border:0px;}
+
+#nav {padding:0; margin:0px 0px 0px 0px; list-style:none; position:relative; z-index:500;  }
+
+/* Default list styling */
+
+#nav dd:hover {position:relative; z-index:200;}
+
+/* keep the 'next' level invisible by placing it off screen. */
+#nav ul, 
+#nav dd:hover ul ul,
+#nav dd:hover ul li:hover ul ul,
+#nav dd:hover ul li:hover ul li:hover ul ul,
+#nav dd:hover ul li:hover ul li:hover ul li:hover ul ul
+{position:absolute; left:-9999px; top:-9999px; width:0; height:0; margin:0; padding:0; list-style:none; z-index:200;}
+/* 第一層設定 */
+#nav dd:hover ul.sub
+{left:0px; top:30px; background: #fff; padding:0px 0px 0px 0px; width:auto; height:auto; z-index:3000; text-align:left; box-shadow: 3px 3px 8px rgba(0,0,0,0.2); }
+#nav dd:hover ul.sub li
+{display:block; position:relative;  width:170px; font-weight:normal;}
+#nav dd:hover ul.sub li a
+{display:block; font-size:16px; color:#666; text-decoration:none; padding:15px 20px; line-height:1.2; width:100% ; text-align: left;}
+#nav dd:hover ul.sub li a:hover 
+{ background: #ffe574;}
+
+#nav dd ul.sub li a.fly
+{background: url(../../images/menuicon.png) no-repeat right; color: #FFF;}
+#nav dd:hover ul.sub li a.fly:hover
+{background: url(../../images/menuicon2.png) no-repeat right; color: rgba(255%,255%,255%,0.7);}
+#nav dd:hover ul li:hover > a.fly {background: url(../../images/menuicon2.png) no-repeat right; color: rgba(255%,255%,255%,0.7); } 
+
+#nav dd:hover ul li:hover ul,
+#nav dd:hover ul li:hover ul li:hover ul,
+#nav dd:hover ul li:hover ul li:hover ul li:hover ul,
+#nav dd:hover ul li:hover ul li:hover ul li:hover ul li:hover ul
+{left:150px; top:0px; background: #085998; padding:0px 10px 5px 10px; width:150px; z-index:400; height:auto;}
+
+

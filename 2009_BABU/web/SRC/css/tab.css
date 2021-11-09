@@ -1,0 +1,161 @@
+@charset "utf-8";
+/* CSS Document */
+
+.abgne_tab {
+	width: 100%;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0 0 0;
+}
+
+ul.tabs {
+	width: 100%;
+	text-align: center;
+	margin: 0px 0px 0px 0px;
+	list-style: none;
+	height: auto;
+	display: flex;
+}
+
+ul.tabs li {
+	width: calc(100% / 2);
+	padding: 0px;
+	text-align: center;
+	line-height: 1.2;
+	font-size: 16px;
+	position: relative;
+	background: #eee;
+	padding: 20px;
+}
+
+ul.tabs li.apply-btn-tab {
+	background: #FCC800;
+}
+
+ul.tabs li.apply-btn-tab a{
+	color: #222;
+}
+
+
+
+ul.tabs li a {
+	color: #444;
+	font-size: 16px;
+}
+
+ul.tabs li.active{
+	background: #fff;
+
+}
+
+ul.tabs li.active a {
+	color: #444;
+	/* background: #E86100; */
+}
+
+ul.tabs .apply a {
+	background-color: #FCC800;
+	color: #222;
+}
+
+
+ul.tabs .apply a:hover, ul.tabs .apply a.active {
+	color: #fff;
+}
+
+div.tab_container {
+	width: 100%;
+	border-top: none;
+	background: #fff;
+}
+
+
+
+div.tab_container .tab_content {
+	padding: 40px;
+	display: none;
+
+}
+
+div.tab_container .tab_content:nth-child(1){
+	display: block;
+}
+
+
+
+.styled-input .btn-fb-login{
+	width: 100%;
+	text-align: center;
+	padding: 15px 40px;
+	color: #ffffff;
+    background: #3a5a98;
+}
+
+.styled-input .btn-fb-login a{
+	color: #ffffff;
+	position: relative;
+}
+
+.styled-input .btn-fb-login a:before{
+	content: url('../images/fb.svg');
+	position: absolute;
+	top: -2px;
+    left: -40px;
+	width: 20px;
+	height: 20px;
+}
+
+.styled-input .btn-gogle-login{
+	width: 100%;
+	text-align: center;
+	padding: 15px 40px;
+	border: 1px solid #888;
+}
+
+.styled-input .btn-gogle-login a{
+	color: #888;
+	position: relative;
+
+}
+
+.styled-input .btn-gogle-login a:before{
+	content: url('../images/google.svg');
+	position: absolute;
+	top: -2px;
+    left: -40px;
+	width: 20px;
+	height: 20px;
+}
+
+.styled-input .btn-ig-login{
+	width: 100%;
+	text-align: center;
+	padding: 15px 40px;
+	border: 1px solid #888;
+}
+
+.styled-input .btn-ig-login a{
+	color: #888;
+	position: relative;
+
+}
+
+.styled-input .btn-ig-login a:before{
+	content: url('../images/ig.svg');
+	position: absolute;
+	top: -2px;
+    left: -40px;
+	width: 20px;
+	height: 20px;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 900px) {
+	ul.tabs li a {
+		padding: 15px 20px;
+	}
+	ul.tabs li.active a {
+		padding: 15px 20px;
+	}
+	div.tab_container .tab_content {
+		padding: 20px;
+	}
+}

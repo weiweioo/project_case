@@ -1,0 +1,18 @@
+body{
+	font-family:  cocogoose-pro,msgothic,"Microsoft JhengHei";
+	font-size: 16px;
+	background-color: #fff;
+	color:#5c606b;
+}
+header{
+	width:100%;
+	position: fixed;
+	top: 0;
+	z-index: 99999;
+}
+footer{
+	position:relative;
+	z-index:1;
+	background-color:#f9f9f9;
+	font-family: Microsoft JhengHei;
+}

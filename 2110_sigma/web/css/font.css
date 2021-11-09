@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Roboto-Regular'), local('Roboto-Regular'), url(../fonts/Roboto-Regular.ttf) format('ttf');
+}
+
+.w32 {
+    font-size: 24px;
+    color: #53575A;
+    font-weight: 600;
+    text-decoration: none;
+    font-style: normal;
+}
+
+.w20 {
+    font-size: 18px;
+    color: #606060;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+}
+
+.w18 {
+    font-size: 18px;
+    color: #333;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    line-height: 1.8;
+}
+
+.r16 {
+    color: #da1518;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 800px) {
+    .w32 {
+        font-size: 20px;
+    }
+    .w20 {
+        font-size: 16px;
+    }
+}

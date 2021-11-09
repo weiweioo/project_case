@@ -1,0 +1,442 @@
+@charset "utf-8";
+/* CSS Document */
+
+select.select_sort {
+	border: 1px solid #e3e3e3;
+	outline: none;
+	padding: 5px 10px;
+	border-radius: 5px;
+	font-size: 15px;
+	color: #353535;
+}
+
+select.select01 {
+	border: 1px solid #e3e3e3;
+	outline: none;
+	padding: 5px 10px;
+	border-radius: 5px;
+	font-size: 16px;
+	color: #353535;
+	margin: 0 5px 0 0;
+}
+
+select.select02 {
+	border: 1px solid #e3e3e3;
+	outline: none;
+	padding: 0px 10px;
+	border-radius: 5px;
+	font-size: 15px;
+	color: #353535;
+}
+
+.select_point {
+	border: 1px solid #e3e3e3;
+	outline: none;
+	padding: 3px 5px;
+	border-radius: 5px;
+	font-size: 15px;
+	color: #353535;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+	select.select01:nth-child(1) {
+		width: 100%;
+		margin: 0 0px 8px 0;
+	}
+}
+
+/* -表單-------------------------------------------------------------------------------------------------------*/
+
+.styled-input {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: -10px 0px 0px 0px;
+	padding: 0;
+	list-style: none;
+}
+
+.styled-input li {
+	position: relative;
+	width: 100%;
+	margin: 10px 0px 0px 0px;
+	padding: 0;
+	list-style: none;
+	font-size: 14px;
+	color: #666;
+	background: none;
+	display: flex;
+	align-items: center;
+}
+
+.styled-input li a {
+	color: #E86100;
+	font-weight: bold;
+}
+
+.styled-input li a.mb-text span{
+	background-color: #FCC800;
+	color: #222;
+	padding: 3px 10px;
+	border-radius: 3px;
+}
+
+.styled-input li .gen-mber{
+	color: #666;
+	transition: 0.5s;
+}
+
+.styled-input li:hover .gen-mber{
+	color: #FCC800;
+}
+
+.styled-input li.half {
+	width: calc(50% - 5px);
+}
+
+.styled-input li.txt {
+	margin: 10px 0px 0px 0px;
+	padding: 0px 0px 0px 100px;
+	font-size: 14px;
+	color: #777;
+	display: flex;
+	align-items: center;
+}
+
+.styled-input input[type="radio"] {
+	margin: 0 5px 0px 0px;
+}
+
+.styled-input input[type="text"], .styled-input input[type="tel"], .styled-input input[type="email"], .styled-input input[type="password"]{
+	width: calc(100% - 100px);
+	padding: 8px 15px;
+	font-size: 14px;
+	color: #353535;
+	background-color: #f6f6f6;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border-radius: unset;
+	border: unset;
+
+}
+
+.styled-input input.experience-input{
+	width: 100%;
+}
+.styled-input .box-radio {
+	width: calc(100% - 100px);
+	padding: 12px 15px;
+	font-size: 14px;
+	color: #353535;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border-radius: unset;
+	border: unset;
+
+}
+
+/* 加入會員 */
+
+.member-join .styled-input label {
+	color: #444;
+	width: 100px;
+	font-size: 17px;
+	padding: 10px 0px;
+	text-align: left;
+}
+
+.member-join .styled-input label.read {
+	width: 100%;
+}
+
+/* 
+.member-join .styled-input label.read {
+	width: 100%;
+}
+
+.member-join .styled-input input[type="text"], .member-join .styled-input input[type="tel"], .member-join .styled-input input[type="email"], .member-join .styled-input input[type="password"] {
+	width: calc(100% - 100px);
+	padding: 12px 15px;
+	font-size: 14px;
+	color: #353535;
+	background-color: unset;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border-radius: unset;
+	border: unset;
+	border-bottom: #FEF9E4 1px solid;
+} */
+
+/* //加入會員 */
+
+.styled-input .onlyread {
+	background-color: unset !important;
+	border-bottom: 1px solid #EEE !important;
+}
+
+.styled-input input[type="text02"] {
+	width: 100%;
+	padding: 8px 15px;
+	font-size: 14px;
+	color: #353535;
+	background-color: #f6f6f6;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border: none;
+	border-radius: 3px;
+}
+
+.styled-input textarea {
+	width: calc(100% - 100px);
+	padding: 8px 15px;
+	font-size: 14px;
+	color: #353535;
+	background-color: #f6f6f6;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border: none;
+	border-radius: 3px;
+}
+
+.styled-input textarea {
+	resize: none;
+	display: block;
+}
+
+.styled-input label {
+	color: #202020;
+	width: 100px;
+	font-size: 14px;
+	padding: 10px 0px;
+}
+
+.styled-input .code {
+	padding: 0 0 0 100px;
+	display: flex;
+	align-items: center;
+}
+
+.styled-input .form-btn {
+	width: 100%;
+	padding: 0 0 0 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.styled-input .form-btn .btn-style02{
+	margin: 0 50px 0 0;
+}
+
+.styled-input .code.register {
+	padding: 0 0 0 0px;
+}
+
+.styled-input .code .refresh img {
+	width: 25px;
+}
+
+.styled-input .join {
+	padding: 0 0 0 100px;
+}
+
+.styled-input .join a {
+	color: #777;
+}
+
+.styled-input .join a:after {
+	content: '/';
+	margin: 0px 5px 0px 7px;
+}
+
+.styled-input .join a:last-child:after {
+	display: none;
+}
+
+.styled-input .join a:hover:after, .styled-input .join:hover a:after {
+	color: #777;
+}
+
+.styled-input .join a:hover {
+	text-decoration: none;
+	color: #ef6919;
+}
+
+.styled-input .code .btn-style01 {
+	width: 100%;
+}
+
+.styled-input .add {
+	padding: 0 0 0 0px;
+	margin: 10px 0 0 100px;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1000px) {
+	.styled-input li.half {
+		width: 100%;
+	}
+}
+
+@media only screen and (min-width: 0px) and (max-width: 650px) {
+	.styled-input input[type="text"], .styled-input input[type="tel"], .styled-input input[type="email"], .styled-input input[type="password"] {
+		width: 100%;
+	}
+	.styled-input textarea {
+		width: 100%;
+	}
+	.styled-input label {
+		width: 100%;
+		padding: 0px 0px 8px 0px;
+	}
+	.styled-input .add {
+		margin: 10px 0 0 0px;
+	}
+	.styled-input li.txt {
+		padding: 0px 0px 0px 0px;
+	}
+	.styled-input .code {
+		padding: 0px 0px 0px 0px;
+	}
+}
+
+@media only screen and (min-width: 651px) and (max-width: 1000px) {
+	.styled-input .code {
+		display: block;
+		padding: 0px 0px 0px 100px;
+	}
+}
+
+/* The check_box */
+
+.check_list_box {
+	width: 100%;
+	margin: 0px 0px 0px 0px;
+	height: auto;
+	overflow: hidden;
+}
+
+.check_list_box .check_list {
+	display: inline-block;
+}
+
+.check_list_box .check_list h5 {
+	font-size: 14px;
+	display: inline-block;
+	color: #777;
+	margin: 0px 0 0 0;
+}
+
+.check_list_box .check_list h5 a {
+	color: #ef6919
+}
+
+.check_list label {
+	visibility: visible;
+	opacity: 1;
+	margin: 0;
+	position: static;
+	width: 100%;
+}
+
+.check_list input[type="checkbox"] {
+	display: none;
+}
+
+.check_list input[type="checkbox"]+label span {
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	margin: 0px 0.5em 0 0.25em;
+	border: none;
+	background: #f6f6f6;
+	vertical-align: bottom;
+	border: 1px solid #e3e3e3;
+	border-radius: 3px;
+}
+
+.check_list input[type="checkbox"]:checked+label span {
+	background: #E86100;
+	border: 1px solid #FEF9E4;
+}
+
+.check_list input[type=checkbox]:checked+label>span:before {
+	content: '\f00c';
+	display: block;
+	width: 24px;
+	color: #fff;
+	font-size: 17px;
+	text-align: center;
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 420px) {
+	.check_list_box .check_list {
+		display: inline-block;
+		margin: 0px 0 10px 0;
+	}
+}
+
+@media only screen and (min-width: 0px) and (max-width: 650px) {
+	.check_list_box {
+		margin: 0px 0px 0px 0px;
+	}
+}
+
+/* -twzipcode-*/
+
+.mem_add {
+	width: calc(100% - 100px);
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-ms-flex-line-pack: center;
+	align-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+#twzipcode>div.mem_add_inpt, #twzipcode>div>input.mem_add_inpt {
+	width: 100%;
+	font-size: 14px;
+	color: #353535;
+	border: none;
+}
+
+#twzipcode>div>select.mem_add_inpt {
+	width: calc( 100% / 3);
+	width: calc(100% - 100px);
+	padding: 8px 15px;
+	font-size: 14px;
+	color: #353535;
+	background-color:#f6f6f6;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border: none;
+	border-radius: 3px;
+}
+
+#twzipcode>div>select.mem_add_inpt, #twzipcode>div>input.mem_add_inpt {
+	width: 100%;
+}
+
+#twzipcode>div>select:focus, #twzipcode>div>input.mem_add_inpt:focus {
+	border: 1px solid #e3e3e3;
+}
+
+.mem_inpt {
+	width: calc( 100% / 3 - 5px);
+}

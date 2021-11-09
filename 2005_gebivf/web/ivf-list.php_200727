@@ -1,0 +1,75 @@
+<?php include '_header.php'; ?>
+<link rel="stylesheet" type="text/css" href="SRC/css/inner-page.css" />
+
+<main class="inner_page">
+	<article>
+		<div class="page_banner">
+			<div class="page_banner_img">
+				<img src="images/inb-1.jpg" alt="">
+			</div>
+		</div>
+		<div class=""></div>
+		<!-- 標題 -->
+		<div class="bread">
+			<div class="bre_con">
+				<div class="page-title">
+					<div class="page-title_ch">
+						生殖機構
+					</div>
+					<div class="page-title_en">
+						Reproduction Medicine Center
+					</div>
+				</div>
+				<ul class="bre_all">
+					<li>
+						<a href="index.php">
+							首頁<span>/</span>
+						</a>
+					</li>
+					<li>
+						生殖機構
+					</li>
+
+				</ul>
+			</div>
+		</div>
+		<!-- 標題 -->
+		<div class="page_con row">
+			<div class="inp_list_box ">
+				<div class="inp_tt01">
+					<div class="inp_icon">
+						<img src="" alt="">
+					</div>
+					生殖機構
+				</div>
+				<div class="inp_list">
+					<ul>
+						<li class="hvr-grow-shadow">
+							<a href="ivf.php">
+								<span class="ch">歡迎加入平台聯盟</span>
+							</a>
+						</li>
+						<li class="hvr-grow-shadow">
+							<a href="ivf.php">
+								<span class="ch">加盟的好處</span>
+							</a>
+						</li>
+						<li class="hvr-grow-shadow">
+							<a href="ivf-link.php">
+								<span class="ch">友站連結</span>
+							</a>
+						</li>
+						<li class="hvr-grow-shadow">
+							<a href="ivf-location.php">
+								<span class="ch">離我最近的聯盟診所</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</article>
+</main>
+
+
+<?php include '_footer.php'; ?>

@@ -1,0 +1,106 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular-webfont.eot');
+    src: url('../fonts/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Roboto-Regular-webfont.woff') format('woff'),
+         url('../fonts/Roboto-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/Roboto-Regular-webfont.svg#RobotoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+.w16{
+	font-size: 16px;
+	color:#333;
+	font-weight:normal;
+	text-decoration:none;
+	font-style: normal;	
+	line-height:2;
+}
+.r16{
+	font-size: 16px;
+	color:#da1518;
+	font-weight:normal;
+	text-decoration:none;
+	font-style: normal;	
+	line-height:2;
+}
+
+
+/*--== USER ==--*/
+.wr20{
+	font-size: 20px;
+	line-height: 30px;
+	color: #e10000;
+}
+.red_18{
+	font-size: 18px;
+	line-height: 30px;
+	color: #e10000;
+	margin-bottom: 10px;
+}
+.red_24{
+	font-size: 24px;
+	line-height: 30px;
+	color: #e10000;
+	margin-bottom: 10px;
+}
+.red_28{
+	font-size: 28px;
+	line-height: 35px;
+	color: #e10000;
+	padding-bottom: 15px;
+	margin: 25px 0;
+	border-bottom: 1px solid #cdcdcd;
+}
+.ww16{
+	font-size: 16px;
+	line-height: 30px;
+	color: #ffffff;
+}
+.wb18{
+	font-size: 18px;
+	line-height: 30px;
+	color: #000000;
+	margin-bottom: 10px;
+}
+.wb16{
+	font-size: 16px;
+	line-height: 30px;
+	color: #212121;
+}
+.wb24{
+	font-size: 24px;
+	line-height: 30px;
+	color: #000000;
+	margin-bottom: 15px;
+}
+.wb22{
+	font-size: 22px;
+	line-height: 30px;
+	color: #000;
+	margin-bottom: 15px;
+}
+.wbw24{
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 600;
+	color: #000000;
+	margin-bottom: 15px;
+}
+.wbr16{
+	font-size: 16px;
+	line-height: 30px;
+	color: #212121;
+	text-align: right;
+}
+.center{
+	text-align: center;
+}
+	
+

@@ -1,0 +1,229 @@
+/*-- mobile menu --*/
+
+.mobile_menu {
+  width: 45px;
+  height: 45px;
+  position: fixed;
+  right: 10px;
+  display: none;
+  top: 30px;
+  border-radius: 100%;
+}
+
+#toggle {
+  width: 45px;
+  height: 45px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 9;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  flex-wrap: wrap;
+  align-content: center;
+  border-radius: 30px;
+}
+
+.one, .two, .three {
+  height: 3px;
+  background: rgba(193, 0, 0, 0.8);
+  margin: 2px 0px;
+  transition: all 0.3s;
+  backface-visibility: hidden;
+  float: right;
+  border-radius: 20px;
+}
+
+.one {
+  width: 30px;
+}
+
+.two {
+  width: 20px;
+}
+
+.three {
+  width: 30px;
+}
+
+#toggle.on .one {
+  width: 20px
+}
+
+#toggle.on .two {
+  width: 30px
+}
+
+#toggle.on .three {
+  width: 20px
+}
+
+#menu {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 100px 35px 0 35px;
+  border-radius: 3px;
+  text-align: center;
+  margin: auto;
+  z-index: 0;
+  display: none;
+  border-top: 10px solid rgba(193, 0, 0, 0.8);
+}
+
+#menu>a {
+  width: 100%;
+  float: left;
+  text-align: left;
+  color: #e2ebf7;
+  font-size: 16px;
+  padding: 15px 0;
+  padding-left: 10px;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: space-between;
+}
+
+#menu>a span {
+  font-size: 20px;
+}
+
+#menu>div {
+  width: 90%;
+  height: auto;
+  display: flex;
+  /* justify-content: center; */
+  position: relative;
+  padding-left: 6px;
+  border-top: 1px solid #ffffff87;
+  margin: 0 auto;
+}
+
+#menu>div .serch_box {
+  margin-top: 20px;
+}
+
+#menu>div>a {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 10px;
+  margin: 15px 20px;
+}
+
+/* 內頁 */
+
+.mobile_menu-in {
+  width: 45px;
+  height: 45px;
+  position: fixed;
+  right: 10px;
+  display: none;
+  top: 30px;
+  border-radius: 100%;
+  z-index: 9;
+}
+
+#toggle-in {
+  width: 45px;
+  height: 45px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  flex-wrap: wrap;
+  align-content: center;
+  border-radius: 30px;
+}
+
+#toggle-in.on-in .one {
+  width: 20px
+}
+
+#toggle-in.on-in .two {
+  width: 30px
+}
+
+#toggle-in.on-in .three {
+  width: 20px
+}
+
+#menu-in {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 70px 35px 0 35px;
+  border-radius: 3px;
+  text-align: center;
+  margin: auto;
+  z-index: 0;
+  display: none;
+  border-top: 10px solid rgba(193, 0, 0, 0.8);
+}
+
+#menu-in>a {
+  width: 100%;
+  float: left;
+  text-align: left;
+  color: #e2ebf7;
+  font-size: 16px;
+  padding: 15px 0;
+  padding-left: 10px;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: space-between;
+}
+
+#menu-in>a span {
+  font-size: 20px;
+}
+
+#menu-in>div {
+  width: 90%;
+  height: auto;
+  display: flex;
+  /* justify-content: center; */
+  position: relative;
+  padding-left: 6px;
+  border-top: 1px solid #ffffff87;
+  margin: 0 auto;
+}
+
+#menu-in>div .serch_box {
+  margin-top: 20px;
+}
+
+#menu-in>div>a {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 10px;
+  margin: 15px 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .mobile_menu-in {
+    top: 15px;
+  }
+}
+
+/* 內頁 */
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}

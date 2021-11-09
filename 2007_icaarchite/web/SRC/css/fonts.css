@@ -1,0 +1,50 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+	font-family: cocogoose-pro;
+	src: url('../fonts/cocogoose-pro.semilight.ttf') format('opentype');
+}
+@font-face {
+	font-family: Arial_black;
+	src: url('../fonts/Arial Black Italic.TTF') format('opentype');
+}
+@font-face {
+	font-family: msgothic;
+	src: url('../fonts/msgothic.ttc') format('opentype');
+}
+@font-face {
+	font-family: carminak;
+	src: url('../fonts/carminak.ttf') format('opentype');
+}
+@font-face {
+	font-family: avgardn_0;
+	src: url('../fonts/avgardn_0.ttf') format('opentype');
+}
+@font-face {
+	font-family:Satisfy-Regular;
+	src: url('../fonts/Satisfy-Regular.ttf') format('opentype');
+}
+
+
+
+/*
+@font-face {
+	font-family: 'notos';
+	src: url('../fonts/SourceHanSerifTC-SemiBold.otf') format('opentype');
+}
+@font-face {
+	font-family: 'arial_black';
+	src: url('../fonts/ariblk.ttf') format('opentype');
+}
+
+.fw20_b{
+	font-size: 20px;
+	color: #51afff;
+	font-weight: 600;
+}
+.fs18{
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 30px;
+}*/

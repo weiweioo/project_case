@@ -1,0 +1,254 @@
+/* nav */
+
+.nav-menu,
+.nav-menu ul,
+.nav-menu li,
+.nav-menu a {
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+    list-style: none;
+    display: block;
+    position: relative;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-menu ul {
+    opacity: 0;
+    position: absolute;
+    top: 103px;
+    z-index: 1;
+    -webkit-transition: opacity .3s;
+    transition: opacity .3s;
+}
+
+.shrink .nav-menu ul {
+    top: 100px;
+}
+
+.nav-menu li:hover>ul {
+    opacity: 1;
+    z-index: 1000;
+    height: auto;
+}
+
+.nav-menu li {
+    cursor: default;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 0 0px;
+}
+
+.nav-menu ul li {
+    float: none;
+}
+
+
+/* sub width */
+
+.nav-menu li ul {
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0px;
+    height: 0;
+    overflow: hidden;
+    background-color: #fff;
+    transition: 0.3s;
+    border-top: 3px solid #5784ff00;
+}
+
+.nav-menu li:hover>ul {
+    opacity: 1;
+    z-index: 1000;
+    height: auto;
+    border-top: 3px solid #5784ff;
+}
+
+
+/* root */
+
+.nav-menu a {
+    padding: 50px 20px;
+    color: #949495;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 0px;
+    text-decoration: none;
+    display: block;
+}
+
+@media screen and (max-width: 1024px) {
+    .menu-btn {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .nav-menu a {
+        padding: 0 15px;
+        font-size: 18px;
+    }
+}
+
+.nav-menu>li.lug {
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 2px solid #949495;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    margin: 0 45px 0 15px;
+}
+
+.nav-menu>li.lug .lug-pic {
+    width: 24px;
+    margin: 0 5px 0 0;
+}
+
+.nav-menu>li.lug .lug-pic img {
+    width: 100%;
+    display: block;
+}
+
+.nav-menu>li.lug span a {
+    font-family: "微軟正黑體";
+    font-size: 19px;
+    color: #949495;
+    font-weight: bold;
+    margin: 0 5px 0 0;
+    padding: 0;
+    line-height: 0;
+}
+
+.nav-menu>li.lug span.active a {
+    color: #5784ff;
+}
+
+
+/* root: active */
+
+.nav-menu>li>.nav-active {}
+
+
+/* root: hover/persistence */
+
+
+/* .nav-menu a:hover,
+.nav-menu a:focus,
+.nav-menu li:hover a {
+    color: #5784ff;
+} */
+
+
+/* 2 */
+
+.nav-menu li ul {
+    text-align: left;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 20%);
+}
+
+.nav-menu li ul li {
+    padding: 0;
+    transition: 0.5s;
+    width: 100%;
+    padding: 0px 35px;
+}
+
+.nav-menu li ul li:hover {
+    background-color: #5784ff;
+}
+
+.nav-menu li li a {
+    color: #54565A;
+    font-size: 18px;
+    line-height: normal;
+    transition: 0.5s;
+    font-weight: unset;
+    padding: 15px 0;
+    display: block;
+}
+
+.nav-menu li ul li:hover a {
+    color: #fff;
+}
+
+
+/* .nav-menu li li:before {
+    content: "\f0da";
+    display: inline-block;
+    margin: 0px 0px 0px 0px;
+    font-size: 18px;
+    color: #007580;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+} */
+
+
+/* 2: hover/persistence */
+
+
+/* 3 */
+
+.nav-menu li:hover li:hover li a {
+    background: #444;
+}
+
+
+/* 3: hover/persistence */
+
+.nav-menu li:hover li:hover li a:hover,
+.nav-menu li:hover li:hover li a:focus,
+.nav-menu li:hover li:hover li:hover a {
+    background: #333;
+}
+
+
+/* 4 */
+
+.nav-menu li:hover li:hover li:hover li a {
+    background: #333;
+}
+
+
+/* 4: hover */
+
+.nav-menu li:hover li:hover li:hover li a:hover,
+.nav-menu li:hover li:hover li:hover li a:focus {
+    background: #222;
+}
+
+
+/* vertical */
+
+.nav-vertical {
+    max-width: 220px;
+}
+
+.nav-vertical ul {
+    top: 0;
+    left: -9999px;
+}
+
+.nav-vertical li {
+    width: 100%;
+    float: none;
+}
+
+.nav-vertical li:hover>ul {
+    left: 100%;
+}

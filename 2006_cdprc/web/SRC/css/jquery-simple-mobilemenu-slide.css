@@ -1,0 +1,212 @@
+/*
+JQuery Simple MobileMenu Slide
+https://github.com/Position2/jQuery-Simple-MobileMenu
+*/
+
+/*Main style*/
+
+body.mmactive {
+  overflow: hidden;
+}
+
+.mobile_menu {
+  display: none;
+  position: relative;
+  top: 10%;
+}
+
+.sm_menu_outer.active .mobile_menu {
+  display: block;
+  padding: 0;
+  padding-inline-start: 10px;
+}
+
+.sm_menu_outer {
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: -9;
+  width: 100%;
+  opacity: 0;
+  background-color: #f2edf1;
+  -webkit-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+body:nth-of-type(1) .sm_menu_outer {
+  height: 100vh;
+  width: 60%;
+}
+
+.sm_menu_outer.active {
+  opacity: 1;
+  z-index: 999;
+}
+
+.sm_menu_outer .mobile_menu li.back a {
+  padding: 15px 5px 15px 50px;
+  background: url(../images/back.png) no-repeat scroll 15px center / 5% auto;
+}
+
+.sm_menu_outer .mobile_menu a {
+  color: #401f39;
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 20px 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/*Sub Menu anim */
+
+.sm_menu_outer.slide .mobile_menu .submenu {
+  background-color: #f2edf1;
+  height: 100%;
+  position: absolute;
+  right: -100%;
+  top: 0;
+  transition: all 0.5s ease 0s;
+  width: 100%;
+  z-index: 999;
+}
+
+.sm_menu_outer.slide .mobile_menu li.active>.submenu {
+  right: 0;
+}
+
+.sm_menu_outer .mobile_menu li {
+  list-style-type: none;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0);
+  border-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, #2a2a2a 20%, #2a2a2a 50%, #2a2a2a 80%, rgba(0, 0, 0, 0) 100%) 0 0 1 0;
+  color: #401f39;
+}
+
+.sm_menu_outer.slide .mobile_menu li.hasChild>a {
+  background: url("../images/next.png") no-repeat scroll 95% center / 2% auto;
+}
+
+/*Hamburger Animation */
+
+#sm_menu_ham {
+  cursor: pointer;
+  float: right;
+  height: 25px;
+  position: fixed;
+  right: 5px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+  width: 30px;
+  top: 30px;
+  right: 60px;
+  z-index: 9999;
+}
+
+#sm_menu_ham span {
+  background-color: #401f39;
+  border-radius: 5px;
+  display: block;
+  height: 4px;
+  left: 0;
+  opacity: 1;
+  position: absolute;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: all 0.25s ease-in-out 0s;
+  -moz-transition: all 0.25s ease-in-out 0s;
+  -o-transition: all 0.25s ease-in-out 0s;
+  transition: all 0.25s ease-in-out 0s;
+  width: 30px;
+}
+
+#sm_menu_ham span:nth-child(1) {
+  top: 0;
+}
+
+#sm_menu_ham span:nth-child(2), #sm_menu_ham span:nth-child(3) {
+  top: 10px;
+}
+
+#sm_menu_ham span:nth-child(4) {
+  top: 20px;
+}
+
+#sm_menu_ham.open span:nth-child(1) {
+  left: 50%;
+  top: 18px;
+  width: 0;
+}
+
+#sm_menu_ham.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#sm_menu_ham.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#sm_menu_ham.open span:nth-child(4) {
+  left: 50%;
+  top: 18px;
+  width: 0;
+}
+
+@media (min-width: 1025px) {
+  #sm_menu_ham, .sm_menu_outer {
+    display: none;
+  }
+}
+
+@media screen and (max-width:1024px) {
+  .pageHeader .lev1-2 .lev2.web {
+    display: none;
+  }
+  .pageHeader .lev1-2 .lev2.mb {
+    display: block;
+  }
+  body:nth-of-type(1) .sm_menu_outer {
+    width: 50%;
+  }
+  #sm_menu_ham {
+    right: 25px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  body:nth-of-type(1) .sm_menu_outer {
+    width: 65%;
+  }
+  .sm_menu_outer .mobile_menu a {
+    font-size: 18px;
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width:500px) {
+  body:nth-of-type(1) .sm_menu_outer {
+    width: 100%;
+  }
+  #sm_menu_ham {
+    right: 20px;
+  }
+  .pageHeader {
+    padding: 0 0 0 10px;
+  }
+
+
+}

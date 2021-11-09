@@ -1,0 +1,105 @@
+@charset "utf-8";
+/* CSS Document */
+
+.abgne_tab {
+	width: 100%;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0 0 0;
+}
+
+ul.tabs {
+	width: 100%;
+	text-align: center;
+	margin: 0px 0px 0px 0px;
+	list-style: none;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+ul.tabs li {
+	text-align: center;
+	line-height: 1.2;
+	font-size: 16px;
+	position: relative;
+	background-color: #f2edf1;
+	padding: 15px;
+	overflow: hidden;
+	width: calc(100% / 5);
+}
+
+ul.tabs li a {
+	color: #5A124A;
+	font-size: 16px;
+}
+
+ul.tabs li.active {
+	background-color: #C8B6D0;
+}
+
+ul.tabs li.active a {
+	color: #5A124A;
+}
+
+div.tab_container {
+	width: 100%;
+	border-top: none;
+	background: #fff;
+}
+
+div.tab_container .tab_content {
+	padding: 0 40px;
+	display: none;
+}
+
+div.tab_container .tab_content:nth-child(1) {
+	display: block;
+}
+
+.tab_content ul li {
+	margin: 15px 0;
+	font-size: 16px;
+	position: relative;
+	padding: 0 20px;
+}
+
+.tab_content ul li::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 9px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 0 5px 10px;
+    border-color: transparent transparent transparent #5A124A;
+	transition: 0.5s;
+}
+
+
+.tab_content ul li:hover::before{
+	border-color: transparent transparent transparent #C8B6D0;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 900px) {
+	ul.tabs li a {
+		padding: 15px 20px;
+	}
+	ul.tabs li.active a {
+		padding: 15px 20px;
+	}
+	div.tab_container .tab_content {
+		padding: 20px;
+	}
+}
+
+@media only screen and (max-width:500px){
+
+	ul.tabs{
+		flex-wrap: wrap;
+	}
+	ul.tabs li{
+		width: 100%;
+	}
+}

@@ -1,0 +1,100 @@
+/* 
+ * FlowupLabels Basic Stylesheet 
+ * -----------------------------
+ * This style sheet is marked with comments indicating 
+ * what should and what shouldn't be changed for your 
+ * styling purposes.
+ */
+
+.FlowupLabels .fl_wrap {
+  /* Can change */
+  width: 100%;
+  min-height: 50px;
+  margin: 12px auto; /* change 0 to auto for center alignment */
+
+  /* Don't change */
+  /* display: block; */
+  position: relative;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* initial label state */
+.FlowupLabels .fl_label {
+  /* Can change */
+  top: 15px;
+  left: 5px;
+  
+  /* Don't change */
+  position: absolute;
+  z-index: 3; /* This can be removed but then the labels must be placed after the inputs in the HTML */
+  -webkit-transition: all .05s linear;
+     -moz-transition: all .05s linear;
+         -transition: all .05s linear;
+}
+
+.FlowupLabels .fl_input{
+  /* Can change */
+  background: none;
+  border: none;
+  border-bottom: 1.5px dashed rgba(0,0,0, 0.15);
+  /* background-color: rgba(0, 0, 0, 0.065); */
+
+  border-radius: 10px;
+  font-size: 17px;
+  line-height: 22px;
+  padding: 20px 0 0 5px;
+  letter-spacing: 1px;
+  
+  /* Don't change */
+  position: absolute;
+  top:0;left:0;right:0;bottom:0;
+  width: 100%;
+  z-index: 2; /* This can be removed but then the labels must be placed after the inputs in the HTML */
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+.FlowupLabels .fl_textarea {
+  /* Can change */
+  background: none;
+  border: none;
+  background-color: rgba(0,0,0, 0.05);
+  border-bottom: 1px dashed rgba(0,0,0, 0.15);
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 45px 0 0 10px;
+  letter-spacing: 1px;
+  
+  /* Don't change */
+  position: absolute;
+  top:0;left:0;right:0;bottom:0;
+  width: 100%;
+  min-height: 100px;
+  z-index: 2; /* This can be removed but then the labels must be placed after the inputs in the HTML */
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+ 
+  
+/* Focus & populated label styling */
+.FlowupLabels .fl_wrap.focused .fl_label,
+.FlowupLabels .fl_wrap.populated .fl_label,
+/* and graceful degradation */
+.no-js .FlowupLabels .fl_label {
+  /* Can change */
+  top: 0;
+  font-size: 16px;
+  color: #444;
+}
+.FlowupLabels .fl_wrap.focused .fl_label {
+  /* Can change */
+  color: #005ead;
+  font-weight: 600;
+
+}
